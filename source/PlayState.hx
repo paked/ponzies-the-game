@@ -12,11 +12,11 @@ import flixel.util.FlxMath;
  */
 class PlayState extends FlxState
 {
-  var money:Float;
+  var money:Float = 0;
   var moneyText:FlxText;
-  var stampCost:Float;
+  var stampCost:Float = 0;
   var stampCostText:FlxText;
-  var timeLeft:Float;
+  var timeLeft:Float = 0;
   var timeLeftText:FlxText;
 
   /**
@@ -56,5 +56,9 @@ class PlayState extends FlxState
   override public function update():Void
   {
     super.update();
+
+    moneyText.text = "Money Left: " + money;
+    stampCostText.text = "Stamp Cost: " + stampCost;
+    timeLeftText.text = "Time Left: " + timeLeft;
   }
 }
