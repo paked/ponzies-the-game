@@ -25,8 +25,8 @@ class PlayState extends FlxState
   override public function create():Void
   {
     moneyText = new FlxText(0, 0, 240, "Money Left:", 18);
-    stampCostText = new FlxText(0, 100, 240, "Stamp Cost:", 18);
-    timeLeftText = new FlxText(0, 200, 240, "Time Left:", 18);
+    stampCostText = new FlxText(0, 25, 240, "Stamp Cost:", 18);
+    timeLeftText = new FlxText(0, 50, 240, "Time Left:", 18);
 
     var envelopePile = new FlxSprite();
     envelopePile.x = 500 - envelopePile.width;
